@@ -28,7 +28,7 @@
         @foreach ($posts as $post)
         <div class="card">
             <div class="card-body">
-                <a href="{{ route('car.show', ['id' => $post->id]) }}">{{ $post->carName }}</a>
+                <a href="{{ route('car.show', ['id' => $post->id]) }}">< {{ $post->company }}, {{ $post->carName }}, {{ $post->year }} > </a>
 
                 <div class="form-row float-right">
                     {{ $post->created_at }}

@@ -66,7 +66,9 @@
                                         id="exampleFormControlInput1"
                                         name="appearance"
                                         value="{{ $post->appearance }}"
-                                        placeholder="외형"></div>
+                                        placeholder="외형">
+                                    
+                                  
 
                                     <!-- 파일 선택 -->
                                     <div class="mb-3">
@@ -75,12 +77,12 @@
                                     </div>
 
                                     
-                                    <div class="flex">
+                                    <div class="flex mb-3">
                                         @if($post->image)
-                                        <img class="card-img-top" src="{{'/storage/image/'.$post->image }}"></div>
+                                        <img class="card-img-top" src="{{'/storage/image/'.$post->image }}" style="width: 300px;"></div>
                                         @else
                                         <span>
-                                            <img style="width: 30%" src="{{ '/storage/image/noImage.png' }}"></div>
+                                            <img style="width: 300px;" src="{{ '/storage/image/noImage.png' }}"></div>
                                         </span>
                                         @endif
 
@@ -89,5 +91,6 @@
                                         </div>
                                     </div>
                                     </form>
+                                </div>
 
                                 </x-app-layout>
