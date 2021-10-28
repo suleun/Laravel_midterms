@@ -53,6 +53,19 @@
             </div>
 
 
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"> 글 작성 날짜 :
+                    {{ $post->created_at }}</label>
+            </div>
+
+            
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"> 글 수정 날짜 :
+                    {{ $post->updated_at }}</label>
+            </div>
+
+
+
 
             <!-- 파일이 있을경우 보여주기 -->
 
